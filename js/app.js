@@ -13,3 +13,12 @@ let actionBlock = document.querySelector('.action')
 actionBtn.addEventListener('click', () => {
     actionBlock.classList.add('active')
 })
+
+
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

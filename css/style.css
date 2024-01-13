@@ -316,7 +316,7 @@ html {
     margin-top: 80px;
     padding-top: 40px;
     overflow: hidden;
-    padding-bottom: 80px;
+    padding-bottom: 150px;
 }
 
 .slider .container {
@@ -342,7 +342,7 @@ html {
     background: #FFF;
     box-shadow: 0px 100px 150px 0px rgba(0, 0, 0, 0.10);
     /* height: 100%; */
-    padding: 50px;
+    padding: 50px 50px 40px 50px;
     display: flex;
     align-items: flex-start;
     gap: 50px;
@@ -430,7 +430,7 @@ html {
 .slider__dropdown-text {
     border-top: 1px solid #000;
     margin-top: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 /* .slider__dropdown.active {
@@ -489,6 +489,7 @@ html {
 .partners {
     width: 100%;
     padding-top: 50px;
+    margin-top: 20px;
 }
 
 .partners__content {
@@ -693,6 +694,10 @@ textarea {
     .swiper-button-next {
         width: 50px;
         height: 40px;
+    }
+
+    .slider{
+        padding-bottom: 80px;
     }
 
     .slider__box {

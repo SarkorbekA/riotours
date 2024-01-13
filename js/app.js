@@ -20,7 +20,7 @@ const sliderDropdownText = document.querySelectorAll('.slider__dropdown-text');
 
 function checkActive(item, i) {
     if (item.classList.contains('active')) {
-        item.style.minHeight = sliderDropdownText[i].scrollHeight + 'px';
+        item.style.minHeight = sliderDropdownText[i].scrollHeight + 30 + 'px';
     } else {
         item.style.minHeight = '0';
     }

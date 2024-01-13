@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rio Tours">
     <title>RioTours</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <nav class="navbar">
@@ -20,7 +24,10 @@
                             <a href="#header" class="navbar__nav--link">Uy</a>
                         </li>
                         <li>
-                            <a href="#tours" class="navbar__nav--link">Tur Paketlar</a>
+                            <a href="#about" class="navbar__nav--link">Biz haqimizda</a>
+                        </li>
+                        <li>
+                            <a href="#slider" class="navbar__nav--link">Tur Paketlar</a>
                         </li>
                         <li>
                             <a href="#partners" class="navbar__nav--link">Hamkorlar</a>
@@ -47,14 +54,15 @@
                     </div>
                 </div>
             </div>
-        </nav>  
+        </nav>
 
         <header class="header" id="header">
             <div class="container">
                 <div class="header__content">
                     <div class="header__content--action">
                         <h1 class="header__content--action--title">Biz bilan <br> sayohat qiling!</h1>
-                        <p class="header__content--action--info">Dubay Yaqin Sharqdagi eng hashamatli va o'ta zamonaviy shahar bo'lib, uni turistik olmos deb atash mumkin.</p>
+                        <p class="header__content--action--info">Dubay Yaqin Sharqdagi eng hashamatli va o'ta zamonaviy
+                            shahar bo'lib, uni turistik olmos deb atash mumkin.</p>
                         <a href="tel:+998952113333" class="header__content--action--btn button">Buyurtma berish</a>
                     </div>
                     <div class="header__content--img"></div>
@@ -64,53 +72,213 @@
 
         <section class="tours" id="tours">
             <div class="container">
-                <div class="tours__content">
-                    <h2 class="tours__content--title subtitle">Tur Paketlar</h2>
-                    <div class="tours__content--action">
-                        <div class="tours__content--action--item">
-                            <div class="tours__content--action--item--main">
-                                <img src="images/tours-1.png" alt="">
-                                <div>
-                                    <h3>Dubay</h3>
-                                    <p>Birlashgan Arab Amirligi</p>
+                <div class="tours-content">
+                    <div class="tours__box">
+                        <h3 class="tours__box-title">
+                            <span>Ichki</span> turlar
+                        </h3>
+                        <div class="tours__box-inner">
+                            <div class="tours__images">
+                                <div class="tours__images-item">
+                                    <img draggable="false" src="images/tour-1.png" alt="tour image">
+                                </div>
+                                <div class="tours__images-item">
+                                    <img draggable="false" src="images/tour-2.png" alt="tour image">
                                 </div>
                             </div>
-                            <a href="#bron" class="tours__content--action--item--btn button">Buyurtma berish</a>
+                            <a href="#slider" class="tours__box-btn">Barchasi</a>
                         </div>
-                        <div class="tours__content--action--item">
-                            <div class="tours__content--action--item--main">
-                                <img src="images/tours-2.png" alt="">
-                                <div>
-                                    <h3>Kuala-Lumpur</h3>
-                                    <p>Malaysia</p>
+                    </div>
+                    <div class="tours__box">
+                        <h3 class="tours__box-title">
+                            <span>Tashqi</span> turlar
+                        </h3>
+                        <div class="tours__box-inner">
+                            <div class="tours__images">
+                                <div class="tours__images-item">
+                                    <img draggable="false" src="images/tour-3.png" alt="tour image">
+                                </div>
+                                <div class="tours__images-item">
+                                    <img draggable="false" src="images/tour-4.png" alt="tour image">
                                 </div>
                             </div>
-                            <a href="#bron" class="tours__content--action--item--btn button">Buyurtma berish</a>
-                        </div>
-                        <div class="tours__content--action--item">
-                            <div class="tours__content--action--item--main">
-                                <img src="images/tours-3.png" alt="">
-                                <div>
-                                    <h3>Xorazm</h3>
-                                    <p>Uzbekistan</p>
-                                </div>
-                            </div>
-                            <a href="#bron" class="tours__content--action--item--btn button">Buyurtma berish</a>
-                        </div>
-                        <div class="tours__content--action--item">
-                            <div class="tours__content--action--item--main">
-                                <img src="images/tours-4.png" alt="">
-                                <div>
-                                    <h3>Samarqand</h3>
-                                    <p>Uzbekistan</p>
-                                </div>
-                            </div>
-                            <a href="#bron" class="tours__content--action--item--btn button">Buyurtma berish</a>
+                            <a href="#slider" class="tours__box-btn">Barchasi</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+        <!--  about  -->
+        <section class="about" id="about">
+            <div class="container">
+                <h3 class="about-title">
+                    Rio<span>Tours</span> - bu
+                </h3>
+                <div class="about-content">
+                    <img draggable="false" src="images/about-uz.webp" alt="about">
+                </div>
+            </div>
+        </section>
+
+        <!--  slider  -->
+        <div class="slider" id="slider">
+            <div class="container">
+                <div class="slider-wrapper">
+                    <h3 class="slider-title">
+                        Ichki 
+                        turlar
+                    </h3>
+                    <div class="slider-content">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__box">
+                                        <div class="slider__box-image">
+                                            <img src="./images/tour-slider.png" alt="tours image">
+                                        </div>
+                                        <div class="slider__box-inner">
+                                            <div class="slider__box-article">
+                                                <h3 class="slider__box-title">
+                                                    Xorazmga
+                                                    qiziqarli sayohat
+                                                </h3>
+                                                <h4 class="slider__box-subtitle">
+                                                    1.440.000 so'mdan
+                                                </h4>
+                                            </div>
+                                            <div class="slider__buttons">
+                                                <div class="slider__buttons-item">Bron qilish</div>
+                                                <div class="slider__buttons-item second">Batafsil</div>
+                                            </div>
+                                            <div class="slider__dropdown">
+                                                <p class="slider__dropdown-text">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's standard dummy text
+                                                    ever
+                                                    since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__box">
+                                        <div class="slider__box-image">
+                                            <img src="./images/tour-slider.png" alt="tours image">
+                                        </div>
+                                        <div class="slider__box-inner">
+                                            <div class="slider__box-article">
+                                                <h3 class="slider__box-title">
+                                                    Xorazmga
+                                                    qiziqarli sayohat
+                                                </h3>
+                                                <h4 class="slider__box-subtitle">
+                                                    1.440.000 so'mdan
+                                                </h4>
+                                            </div>
+                                            <div class="slider__buttons">
+                                                <div class="slider__buttons-item">Bron qilish</div>
+                                                <div class="slider__buttons-item second">Batafsil</div>
+                                            </div>
+                                            <div class="slider__dropdown">
+                                                <p class="slider__dropdown-text">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's standard dummy text
+                                                    ever
+                                                    since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-wrapper">
+                    <h3 class="slider-title">
+                        Tashqi 
+                        turlar
+                    </h3>
+                    <div class="slider-content">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__box">
+                                        <div class="slider__box-image">
+                                            <img src="./images/tour-slider.png" alt="tours image">
+                                        </div>
+                                        <div class="slider__box-inner">
+                                            <div class="slider__box-article">
+                                                <h3 class="slider__box-title">
+                                                    Xorazmga
+                                                    qiziqarli sayohat
+                                                </h3>
+                                                <h4 class="slider__box-subtitle">
+                                                    1.440.000 so'mdan
+                                                </h4>
+                                            </div>
+                                            <div class="slider__buttons">
+                                                <div class="slider__buttons-item">Bron qilish</div>
+                                                <div class="slider__buttons-item second">Batafsil</div>
+                                            </div>
+                                            <div class="slider__dropdown">
+                                                <p class="slider__dropdown-text">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's standard dummy text
+                                                    ever
+                                                    since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__box">
+                                        <div class="slider__box-image">
+                                            <img src="./images/tour-slider.png" alt="tours image">
+                                        </div>
+                                        <div class="slider__box-inner">
+                                            <div class="slider__box-article">
+                                                <h3 class="slider__box-title">
+                                                    Xorazmga
+                                                    qiziqarli sayohat
+                                                </h3>
+                                                <h4 class="slider__box-subtitle">
+                                                    1.440.000 so'mdan
+                                                </h4>
+                                            </div>
+                                            <div class="slider__buttons">
+                                                <div class="slider__buttons-item">Bron qilish</div>
+                                                <div class="slider__buttons-item second">Batafsil</div>
+                                            </div>
+                                            <div class="slider__dropdown">
+                                                <p class="slider__dropdown-text">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's standard dummy text
+                                                    ever
+                                                    since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="partners" id="partners">
             <div class="container">
@@ -147,35 +315,10 @@
                     <div class="contacts__content--action">
                         <iframe src="https://yandex.uz/maps/-/CCUOJBv5gA" title="Yandex Maps"></iframe>
                         <div>
-                            <p>г.Ташкент, Юнусабадский р-н, кв-л 2, д.39а/2</p>
-                            <p>Эл. адрес: riotoursuz@gmail.com</p>
+                            <p>Toshkent sh., Yunusobod t., 2 kv, 39а/2 uy</p>
+                            <p>El. pochta: riotoursuz@gmail.com</p>
                         </div>
                         <a href="#bron" class="tours__content--action--item--btn button">Buyurtma berish</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="contacts" id="bron">
-            <div class="container">
-                <div class="contacts__content">
-                    <h2 class="contacts__content--title subtitle">Hozir band qiling</h2>
-                    <div class="contacts__content--form">
-                        <div class="form-name form">
-                            <label>Ism</label>
-                            <input type="text" placeholder="Ism">
-                        </div>
-                        <div class="form-phone form">
-                            <label>Telefon raqami</label>
-                            <input type="number" placeholder="Telefon raqami *">
-                        </div>
-                        <div class="form-area form">
-                            <label>Xabar</label>
-                            <textarea placeholder="Xabar"></textarea>
-                        </div>
-                        <div class="action">Ariza yuborildi!</div>
-                        <a href="#!" class="btn-send btn-send-action">Yuborish</a>
-                        <a href="https://payme.uz/62419cc7fe5217f50761f43d" class="btn-send">To'lash</a>
                     </div>
                 </div>
             </div>
@@ -187,7 +330,7 @@
                     <a href="#header" class="navbar__nav--link">Uy</a>
                 </li>
                 <li>
-                    <a href="#tours" class="navbar__nav--link">Tur Paketlar</a>
+                    <a href="#slider" class="navbar__nav--link">Tur Paketlar</a>
                 </li>
                 <li>
                     <a href="#partners" class="navbar__nav--link">Hamkorlar</a>
@@ -209,6 +352,8 @@
             </div>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

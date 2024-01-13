@@ -79,12 +79,11 @@ html {
 .navbar__nav--list {
     display: flex;
     align-items: center;
-    column-gap: 15px;
 }
 
 .navbar__nav--link {
     display: flex;
-    padding: 20px 40px;
+    padding: 20px 30px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -94,6 +93,7 @@ html {
     font-size: 16px;
     transition: 0.2s;
     color: #000;
+    width: max-content;
 }
 
 .navbar__nav--link:hover {
@@ -238,6 +238,11 @@ html {
     font-size: 54px;
     font-weight: 600;
     max-width: 400px;
+}
+
+.tours__box-title span {
+    display: block;
+    font-weight: inherit;
 }
 
 .tours__box-inner {
@@ -546,51 +551,6 @@ html {
     outline: none;
 }
 
-.contacts__content--form {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-    gap: 10px;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    row-gap: 3px;
-}
-
-.form label {
-    font-weight: 600;
-}
-
-.form input,
-textarea {
-    padding: 10px;
-    outline: none;
-    border: 1px solid wheat;
-    font-size: 17px;
-    width: 100%;
-    resize: none;
-}
-
-.btn-send {
-    width: max-content;
-    padding: 20px 50px;
-    outline: none;
-    border: none;
-    color: black;
-    background: orange;
-    font-size: 23px;
-    text-transform: uppercase;
-    font-weight: 900;
-    cursor: pointer;
-    transition: all .2s;
-}
-
-.btn-send:hover {
-    color: #fff;
-}
-
 .modal {
     position: fixed;
     top: 0;
@@ -606,6 +566,7 @@ textarea {
     align-items: center;
     justify-content: center;
     width: 50%;
+    gap: 20px;
 }
 
 .modal.active {
@@ -696,7 +657,7 @@ textarea {
         height: 40px;
     }
 
-    .slider{
+    .slider {
         padding-bottom: 80px;
     }
 
@@ -842,6 +803,7 @@ textarea {
     .slider-title {
         font-size: 46px;
     }
+
     .button {
         padding: 25px 60px;
         border-radius: 16px;
@@ -901,6 +863,11 @@ textarea {
     .slider__box-subtitle {
         font-size: 28px;
     }
+    .tours__box-btn {
+        border-radius: 10px;
+        padding: 18px 0;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -927,7 +894,6 @@ textarea {
     .header__content--action--title {
         font-size: 2rem;
     }
-
 
     .tours__images {
         flex-direction: column;
@@ -981,7 +947,7 @@ textarea {
         font-size: 20px;
     }
 
-    
+
     .button {
         padding: 20px 60px;
         border-radius: 16px;
@@ -997,11 +963,16 @@ textarea {
         height: 45px;
         font-size: 14px;
     }
+
     .slider__box {
         border-radius: 12px;
     }
+
     .swiper {
         padding: 40px 0 60px;
+    }
+    .tours__box-title span {
+        display: inline;
     }
 }
 

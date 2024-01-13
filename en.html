@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rio Tours">
     <title>RioTours</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <nav class="navbar">
@@ -20,7 +24,10 @@
                             <a href="#header" class="navbar__nav--link">Home</a>
                         </li>
                         <li>
-                            <a href="#tours" class="navbar__nav--link">Tours</a>
+                            <a href="#about" class="navbar__nav--link">About</a>
+                        </li>
+                        <li>
+                            <a href="#slider" class="navbar__nav--link">Tours</a>
                         </li>
                         <li>
                             <a href="#partners" class="navbar__nav--link">Partners</a>
@@ -48,67 +55,193 @@
                 </div>
             </div>
         </nav>
+
         <header class="header" id="header">
             <div class="container">
                 <div class="header__content">
                     <div class="header__content--action">
                         <h1 class="header__content--action--title">Travel together <br> with us!</h1>
-                        <p class="header__content--action--info">Dubai is the most chic and ultra-modern city in the Middle East, which can be safely called a tourist diamond.</p>
+                        <p class="header__content--action--info">Dubai is the most chic and ultra-modern city in the
+                            Middle East, which can be safely called a tourist diamond.</p>
                         <a href="tel:+998952113333" class="header__content--action--btn button">I want to travel!</a>
                     </div>
                     <div class="header__content--img"></div>
                 </div>
             </div>
         </header>
-        <section class="tours" id="tours">
+
+        <!--  about  -->
+        <section class="about" id="about">
             <div class="container">
-                <div class="tours__content">
-                    <h2 class="tours__content--title subtitle">Tours</h2>
-                    <div class="tours__content--action">
-                        <div class="tours__content--action--item">
-                            <div class="tours__content--action--item--main">
-                                <img src="images/tours-1.png" alt="">
-                                <div>
-                                    <h3>Dubay</h3>
-                                    <p>Arab Emirates</p>
+                <h3 class="about-title">
+                    Rio<span>Tours</span> - is
+                </h3>
+                <div class="about-content">
+                    <img draggable="false" src="images/about-en.webp" alt="about">
+                </div>
+            </div>
+        </section>
+
+        <!--  slider  -->
+        <div class="slider" id="slider">
+            <div class="container">
+                <div class="slider-wrapper">
+                    <h3 class="slider-title">
+                        Domestic
+                        <br>
+                        tours
+                    </h3>
+                    <div class="slider-content">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__box">
+                                        <div class="slider__box-image">
+                                            <img src="./images/tour-slider.png" alt="tours image">
+                                        </div>
+                                        <div class="slider__box-inner">
+                                            <div class="slider__box-article">
+                                                <h3 class="slider__box-title">
+                                                    Exciting tour
+                                                    to Khorezm
+                                                </h3>
+                                                <h4 class="slider__box-subtitle">
+                                                    from 1,440,000 som
+                                                </h4>
+                                            </div>
+                                            <div class="slider__buttons">
+                                                <div class="slider__buttons-item">Book now</div>
+                                                <div class="slider__buttons-item second">Learn more</div>
+                                            </div>
+                                            <div class="slider__dropdown">
+                                                <p class="slider__dropdown-text">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's standard dummy text
+                                                    ever
+                                                    since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__box">
+                                        <div class="slider__box-image">
+                                            <img src="./images/tour-slider.png" alt="tours image">
+                                        </div>
+                                        <div class="slider__box-inner">
+                                            <div class="slider__box-article">
+                                                <h3 class="slider__box-title">
+                                                    Exciting tour
+                                                    to Khorezm
+                                                </h3>
+                                                <h4 class="slider__box-subtitle">
+                                                    from 1,440,000 som
+                                                </h4>
+                                            </div>
+                                            <div class="slider__buttons">
+                                                <div class="slider__buttons-item">Book now</div>
+                                                <div class="slider__buttons-item second">Learn more</div>
+                                            </div>
+                                            <div class="slider__dropdown">
+                                                <p class="slider__dropdown-text">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's standard dummy text
+                                                    ever
+                                                    since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <a href="#bron" class="tours__content--action--item--btn button">Book now</a>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="tours__content--action--item">
-                            <div class="tours__content--action--item--main">
-                                <img src="images/tours-2.png" alt="">
-                                <div>
-                                    <h3>Kuala-Lumpur</h3>
-                                    <p>Malaysia</p>
+                    </div>
+                </div>
+                <div class="slider-wrapper">
+                    <h3 class="slider-title">
+                        International
+                        <br>
+                        tours
+                    </h3>
+                    <div class="slider-content">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__box">
+                                        <div class="slider__box-image">
+                                            <img src="./images/tour-slider.png" alt="tours image">
+                                        </div>
+                                        <div class="slider__box-inner">
+                                            <div class="slider__box-article">
+                                                <h3 class="slider__box-title">
+                                                    Exciting tour
+                                                    to Khorezm
+                                                </h3>
+                                                <h4 class="slider__box-subtitle">
+                                                    from 1,440,000 som
+                                                </h4>
+                                            </div>
+                                            <div class="slider__buttons">
+                                                <div class="slider__buttons-item">Book now</div>
+                                                <div class="slider__buttons-item second">Learn more</div>
+                                            </div>
+                                            <div class="slider__dropdown">
+                                                <p class="slider__dropdown-text">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's standard dummy text
+                                                    ever
+                                                    since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__box">
+                                        <div class="slider__box-image">
+                                            <img src="./images/tour-slider.png" alt="tours image">
+                                        </div>
+                                        <div class="slider__box-inner">
+                                            <div class="slider__box-article">
+                                                <h3 class="slider__box-title">
+                                                    Exciting tour
+                                                    to Khorezm
+                                                </h3>
+                                                <h4 class="slider__box-subtitle">
+                                                    from 1,440,000 som
+                                                </h4>
+                                            </div>
+                                            <div class="slider__buttons">
+                                                <div class="slider__buttons-item">Book now</div>
+                                                <div class="slider__buttons-item second">Learn more</div>
+                                            </div>
+                                            <div class="slider__dropdown">
+                                                <p class="slider__dropdown-text">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's standard dummy text
+                                                    ever
+                                                    since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <a href="#bron" class="tours__content--action--item--btn button">Book now</a>
-                        </div>
-                        <div class="tours__content--action--item">
-                            <div class="tours__content--action--item--main">
-                                <img src="images/tours-3.png" alt="">
-                                <div>
-                                    <h3>Xorazm</h3>
-                                    <p>Uzbekistan</p>
-                                </div>
-                            </div>
-                            <a href="#bron" class="tours__content--action--item--btn button">Book now</a>
-                        </div>
-                        <div class="tours__content--action--item">
-                            <div class="tours__content--action--item--main">
-                                <img src="images/tours-4.png" alt="">
-                                <div>
-                                    <h3>Samarqand</h3>
-                                    <p>Uzbekistan</p>
-                                </div>
-                            </div>
-                            <a href="#bron" class="tours__content--action--item--btn button">Book now</a>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
         <section class="partners" id="partners">
             <div class="container">
                 <div class="partners__content">
@@ -136,67 +269,33 @@
                 </div>
             </div>
         </section>
+
         <section class="contacts" id="contacts">
             <div class="container">
                 <div class="contacts__content">
-                    <h2 class="contacts__content--title subtitle">Contacts</h2>
-                    <div class="contacts__content--form">
-                        <div class="form-name form">
-                            <label>Name</label>
-                            <input type="text" placeholder="Name">
-                        </div>
-                        <div class="form-phone form">
-                            <label>Phone number</label>
-                            <input type="number" placeholder="Phone number *">
-                        </div>
-                        <div class="form-area form">
-                            <label>Message</label>
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                        <a href="https://payme.uz/62419cc7fe5217f50761f43d" class="btn-send">Send</a>
-                    </div>
                     <div class="contacts__content--action">
                         <iframe src="https://yandex.uz/maps/-/CCUOJBv5gA" title="Yandex Maps"></iframe>
                         <div>
-                            <p>г.Ташкент, Юнусабадский р-н, кв-л 2, д.39а/2</p>
-                            <p>Эл. адрес: riotoursuz@gmail.com</p>
+                            <p>Tashkent city, Yunusabad district, block 2, building 39a/2</p>
+                            <p>Email address: riotoursuz@gmail.com</p>
                         </div>
                         <a href="#bron" class="tours__content--action--item--btn button">Book now</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contacts" id="bron">
-            <div class="container">
-                <div class="contacts__content">
-                    <h2 class="contacts__content--title subtitle">Book now</h2>
-                    <div class="contacts__content--form">
-                        <div class="form-name form">
-                            <label>Name</label>
-                            <input type="text" placeholder="Name">
-                        </div>
-                        <div class="form-phone form">
-                            <label>Phone number</label>
-                            <input type="number" placeholder="Phone number *">
-                        </div>
-                        <div class="form-area form">
-                            <label>Message</label>
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                        <div class="action">Application sent!</div>
-                        <a href="#!" class="btn-send btn-send-action">SEND</a>
-                        <a href="https://payme.uz/62419cc7fe5217f50761f43d" class="btn-send">PAY</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+
         <section class="modal">
             <ul class="modal--list">
                 <li>
                     <a href="#header" class="navbar__nav--link">Home</a>
                 </li>
                 <li>
-                    <a href="#tours" class="navbar__nav--link">Tours</a>
+                    <a href="#about" class="navbar__nav--link">About</a>
+                </li>
+                <li>
+                    <a href="#slider" class="navbar__nav--link">Tours</a>
                 </li>
                 <li>
                     <a href="#partners" class="navbar__nav--link">Partners</a>
@@ -218,6 +317,9 @@
             </div>
         </section>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

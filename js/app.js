@@ -16,10 +16,11 @@ let actionBlock = document.querySelector('.action');
 
 const sliderDropdownBtn = document.querySelectorAll('.slider__buttons-item.second');
 const sliderDropdown = document.querySelectorAll('.slider__dropdown');
+const sliderDropdownText = document.querySelectorAll('.slider__dropdown-text');
 
-function checkActive(item) {
+function checkActive(item, i) {
     if (item.classList.contains('active')) {
-        item.style.minHeight = item.scrollHeight + 'px';
+        item.style.minHeight = sliderDropdownText[i].scrollHeight + 'px';
     } else {
         item.style.minHeight = '0';
     }
@@ -29,7 +30,7 @@ for (let i = 0; i < sliderDropdownBtn.length; i++) {
     sliderDropdownBtn[i].addEventListener('click', () => {
         sliderDropdown[i].classList.toggle('active');
         sliderDropdownBtn[i].classList.toggle('active')
-        checkActive(sliderDropdown[i]);
+        checkActive(sliderDropdown[i], i);
     })
 }
 
@@ -49,9 +50,16 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
     on: {
-        slideChange: function () {
+        // slideChange: function () {
+        //     removeActive();
+        //     console.log('heelo');
+        // }
+        slidePrevTransitionStart: function () {
             removeActive();
-        }
+        },
+        slideNextTransitionStart: function () {
+            removeActive();
+        },
     }
 });
 

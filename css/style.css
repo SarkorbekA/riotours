@@ -483,6 +483,134 @@ html {
 }
 
 
+/* ===== ticket ===== */
+
+.ticket {
+    padding-bottom: 150px;
+    overflow-x: hidden;
+}
+
+.ticket-title {
+    color: #000;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 75px;
+}
+
+.ticket__box {
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 70px 80px 0px rgba(0, 0, 0, 0.10);
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.ticket__box-image {
+    border-radius: 25px;
+    width: 250px;
+    height: 300px;
+    background: #030F5D;
+    position: relative;
+}
+
+.ticket__box-image::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #FFF;
+    box-shadow: 0 0 60px 50px #FFF;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.ticket__box-image img {
+    transform: translateX(-170px);
+    position: relative;
+    z-index: 2;
+}
+
+.ticket__box-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket__box-article {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 660px;
+}
+
+.ticket__box-title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.ticket__buttons {
+    display: flex;
+    gap: 25px;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.ticket__buttons-item {
+    cursor: pointer;
+    width: calc(50% - 25px / 2);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #030F5D;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    border: 2px solid #030F5D;
+    transition: .3s all;
+}
+
+.ticket__buttons-item.second {
+    background: #FFF;
+    color: #030F5D;
+}
+
+.ticket__dropdown {
+    margin-top: 45px;
+    padding-top: 35px;
+    border-top: 1px solid #000;
+    max-width: 725px;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.ticket__dropdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: decimal;
+}
+
+.ticket__dropdown-item {
+    color: #000;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 200%;
+    list-style: decimal;
+}
+
+
 /* ===== partners ===== */
 
 .subtitle {
@@ -493,7 +621,7 @@ html {
 
 .partners {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 20px;
     margin-top: 20px;
 }
 
@@ -662,7 +790,6 @@ html {
     }
 
     .slider__box {
-        border-radius: 30px;
         padding: 30px;
         gap: 20px;
         max-width: 1024px;
@@ -690,6 +817,7 @@ html {
 
     .slider__buttons {
         gap: 15px;
+        max-width: 550px;
     }
 
     .slider__dropdown-text {
@@ -701,6 +829,59 @@ html {
         font-size: 20px;
         line-height: 140%;
         transition: .2s all;
+    }
+
+    .ticket__box {
+        padding: 30px;
+        gap: 25px;
+        max-width: 1024px;
+    }
+
+    .ticket-title {
+        margin-bottom: 45px;
+    }
+
+    .ticket__box-title {
+        font-size: 30px;
+    }
+
+    .ticket__box-image img {
+        transform: translateX(-170px) scale(0.8) translateY(10px);
+        position: relative;
+        z-index: 2;
+    }
+
+    .ticket__buttons-item {
+        width: calc(50% - 15px / 2);
+        height: 55px;
+        border-radius: 12px;
+        font-size: 17px;
+        border: 1px solid #030F5D;
+    }
+
+    .ticket__buttons {
+        gap: 15px;
+        max-width: 550px;
+    }
+
+    .ticket__dropdown {
+        padding-top: 20px;
+        width: 100%;
+        max-width: 650px;
+        padding-left: 0px;
+    }
+
+    .ticket__dropdown-item {
+        font-size: 22px;
+        line-height: 160%;
+    }
+
+    .ticket__box-image {
+        border-radius: 25px;
+        width: 220px;
+        height: 280px;
+        background: #030F5D;
+        position: relative;
     }
 }
 
@@ -809,6 +990,52 @@ html {
         border-radius: 16px;
         font-size: 18px;
     }
+
+    .ticket-title {
+        font-size: 44px;
+        margin-bottom: 35px;
+    }
+
+    .ticket__box {
+        flex-direction: column;
+        padding: 40px 30px;
+        border-radius: 20px;
+    }
+
+    .ticket__box-image {
+        margin: auto;
+    }
+
+    .ticket__dropdown {
+        padding-left: 30px;
+        margin-top: 25px;
+    }
+
+    .ticket__box-title {
+        font-size: 24px;
+    }
+
+    .ticket__buttons {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .ticket__buttons-item {
+        width: calc(50% - 10px / 2);
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .ticket__dropdown-item {
+        color: #000;
+        font-size: 20px;
+        line-height: 180%;
+        list-style: decimal;
+    }
+
+    .ticket__dropdown-list {
+        gap: 20px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -863,10 +1090,15 @@ html {
     .slider__box-subtitle {
         font-size: 28px;
     }
+
     .tours__box-btn {
         border-radius: 10px;
         padding: 18px 0;
         font-size: 16px;
+    }
+
+    .ticket-title {
+        font-size: 36px;
     }
 }
 
@@ -968,11 +1200,54 @@ html {
         border-radius: 12px;
     }
 
+    .slider-title {
+        font-size: 32px;
+    }
+
     .swiper {
         padding: 40px 0 60px;
     }
+
     .tours__box-title span {
         display: inline;
+    }
+
+    .ticket__box {
+        border-radius: 12px;
+        padding: 30px 20px;
+    }
+
+    .ticket__buttons {
+        flex-direction: column;
+    }
+
+    .ticket__buttons-item {
+        width: 100%;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .ticket-title {
+        margin-bottom: 25px;
+    }
+
+    .ticket__dropdown {
+        padding-left: 20px;
+    }
+
+    .ticket__dropdown-item {
+        font-size: 18px;
+        line-height: 170%;
+    }
+
+    .ticket__box-image img {
+        transform: translateX(-140px) scale(0.8) translateY(10px);
+        position: relative;
+        z-index: 2;
+    }
+
+    .ticket-title {
+        font-size: 32px;
     }
 }
 

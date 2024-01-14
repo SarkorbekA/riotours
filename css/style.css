@@ -321,7 +321,7 @@ html {
     margin-top: 80px;
     padding-top: 40px;
     overflow: hidden;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
 }
 
 .slider .container {
@@ -345,7 +345,7 @@ html {
     width: 100%;
     border-radius: 30px;
     background: #FFF;
-    box-shadow: 0px 100px 150px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.10);
     /* height: 100%; */
     padding: 50px 50px 40px 50px;
     display: flex;
@@ -357,6 +357,13 @@ html {
     border-radius: 25px;
     width: 250px;
     height: 300px;
+}
+
+.slider__box-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
 }
 
 .slider__box-inner {
@@ -376,6 +383,11 @@ html {
 .slider__box-title {
     color: #000;
     font-size: 42px;
+    font-weight: 600;
+}
+
+.slider__box-title span {
+    display: block;
     font-weight: 600;
 }
 
@@ -438,6 +450,10 @@ html {
     padding-top: 20px;
 }
 
+.slider__dropdown-text span {
+    display: block;
+}
+
 /* .slider__dropdown.active {
     height: 200px;
 } */
@@ -486,6 +502,7 @@ html {
 /* ===== ticket ===== */
 
 .ticket {
+    padding-top: 70px;
     padding-bottom: 150px;
     overflow-x: hidden;
 }

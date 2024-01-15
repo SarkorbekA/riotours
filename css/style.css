@@ -491,11 +491,11 @@ html {
 }
 
 .swiper-button-next:after {
-    background-image: url('/images/arrow-right.png');
+    background-image: url('../images/arrow-right.png');
 }
 
 .swiper-button-prev:after {
-    background-image: url('/images/arrow-left.png');
+    background-image: url('../images/arrow-left.png');
 }
 
 
